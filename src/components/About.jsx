@@ -52,7 +52,7 @@ const About = () => {
       <div className="relative h-dvh w-full" id="clip">
         <div className="mask-clip-path about-image relative w-full sm:w-2/3 lg:w-1/2">
           <img
-            src="img/about.gif"
+            src="img/about1.gif"
             alt="Background"
             className="absolute left-0 top-0 w-full h-full object-cover"
           />
