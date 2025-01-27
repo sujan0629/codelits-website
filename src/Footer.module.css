@@ -1,0 +1,145 @@
+.footer {
+  width: 100%;
+  height: 85vh; 
+  background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 0.5) 200%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: "general";
+  padding: 0 20px; 
+  box-sizing: border-box;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  position: absolute;
+  bottom: 10%; 
+  text-align: center;
+  z-index: 1; 
+}
+
+.hero h1,
+.hero h2 {
+  margin: 0;
+  padding: 0;
+  color: black;
+  text-transform: uppercase;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 1);
+}
+
+.hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.hero h2 {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.buttons {
+  position: absolute;
+  top: 10%; 
+  left: 50%; 
+  transform: translateX(-50%);
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  gap: 20px; 
+  z-index: 2; 
+}
+
+button {
+  cursor: pointer;
+  z-index: 2;
+}
+
+button {
+  cursor: pointer;
+  z-index: 2;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#footer-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .footer {
+    height: 60vh; 
+  }
+
+  .hero h1 {
+    font-size: 28px; 
+  }
+
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .buttons {
+    top: 5%; 
+    gap: 30px; 
+  }
+
+  .buttons button {
+    padding: 10px 20px;
+    font-size: 14px; 
+  }
+
+  .hero {
+    bottom: 5%; 
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    height: 50vh; 
+    padding: 0 10px;
+  }
+
+  .hero h1 {
+    font-size: 24px; 
+  }
+
+  .hero h2 {
+    font-size: 18px; 
+  }
+
+  .buttons {
+    top: 3%; 
+    gap: 20px; 
+  }
+
+  .buttons button {
+    padding: 8px 16px;
+    font-size: 12px; 
+  }
+
+  .hero {
+    bottom: 3%; 
+  }
+}
